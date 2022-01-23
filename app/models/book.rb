@@ -3,5 +3,5 @@ class Book < ApplicationRecord
   scope :costy, -> { where("price >?", 3000) }
   scope :written_about, ->(theme) { where("name like ?", "%#{theme}%")}
 
-  belongs_to: publisher
+  belongs_to :publisher
 end
