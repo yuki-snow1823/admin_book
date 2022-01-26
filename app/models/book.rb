@@ -16,4 +16,10 @@ class Book < ApplicationRecord
       book.errors[:name] << "I don't like exercise."
     end
   end
+
+  before_validation do # コールバックのポイント（まとめることもできる）
+    self.name = self.name.gsub(/Cat/) do |matched|
+      "lovely #{matched}"
+    end
+  end
 end
