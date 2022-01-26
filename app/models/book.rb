@@ -10,4 +10,10 @@ class Book < ApplicationRecord
   validates :name, presence: true
   validates :name, length: { maximum: 25 }
   validates :price, numericality: { greater_than_or_eaual_to: 0 }
+
+  validate do |book|
+    if book.name.include?('exercise')
+      book.errors[:name] << "I don't like exercise."
+    end
+  end
 end
