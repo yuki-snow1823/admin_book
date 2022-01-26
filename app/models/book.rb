@@ -22,4 +22,11 @@ class Book < ApplicationRecord
       "lovely #{matched}"
     end
   end
+
+  # 削除直後に実行
+  def add_book_log
+    Rails.logger.info "Book is deleted #{self.attributes}"
+  end
+
+  after_destroy :add_book_log
 end
