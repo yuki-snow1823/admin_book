@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   delete "books/:id" => "books#destroy"
 
   resources :publishers
+  resource :profile
 
   # resources :publishers do
   #   resources :books
