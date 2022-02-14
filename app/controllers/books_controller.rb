@@ -8,6 +8,7 @@ class BooksController < ApplicationController
       format.html
       format.json # jsonのリクエストがあればそっちを返す
     end
+    # render :show
   end
 
   def destroy

@@ -1,0 +1,1 @@
+json.exact! @book, :id, :name, :price 
