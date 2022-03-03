@@ -2,10 +2,13 @@
 
 one:
   name: MyString
-  publishd_on: 2022-01-17
+  published_on: 2022-01-17
   price: 1
+  publisher_id: 1
 
 two:
   name: MyString
-  publishd_on: 2022-01-17
+  published_on: 2022-01-17
   price: 1
+  publisher_id: 1
+
