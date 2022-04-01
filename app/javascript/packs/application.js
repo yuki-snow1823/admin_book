@@ -11,3 +11,13 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+// 上でやってることと同じかも。
+// require("@rails/ujs").start()
+// require("turbolinks").start()
+// require("@rails/activestorage").start()
+// require("channels")
+
+document.addEventListener("turbolinks:load", () =>{
+  console.log("hoge")
+})

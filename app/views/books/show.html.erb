@@ -1,4 +1,4 @@
-<%= form_with(model: @book, local: true) do |form| %>
+<%= form_with(model: @book, local: false) do |form| %>
 <div class="actions">
   <%= form.submit data: {disable_with: '送信中'}%>
 </div>
