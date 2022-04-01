@@ -1,0 +1,10 @@
+<%= form_with(model: @book, local: true) do |form| %>
+<div class="actions">
+  <%= form.submit data: {disable_with: '送信中'}%>
+</div>
+<% end %>
+
+<%# こう出力される %>
+<%# <div class="actions">
+  <input type="submit" name="commit" value="Create Book" data-disable-with="送信中" />
+</div> %>

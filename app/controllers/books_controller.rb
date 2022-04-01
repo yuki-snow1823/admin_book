@@ -3,12 +3,16 @@ class BooksController < ApplicationController
   before_action :set_book, only:[:show, :destroy]
 
   def show
-    @book = Book.find(params[:id])
-    respond_to do |format|
-      format.html
-      format.json # jsonのリクエストがあればそっちを返す
-    end
+    @book = Book.new
+    # @book = Book.find(params[:id])
+    # respond_to do |format|
+    #   format.html
+    #   format.json # jsonのリクエストがあればそっちを返す
+    # end
     # render :show
+  end
+
+  def create
   end
 
   def destroy
