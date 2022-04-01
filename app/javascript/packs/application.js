@@ -21,3 +21,4 @@ ActiveStorage.start()
 document.addEventListener("turbolinks:load", () =>{
   console.log("hoge")
 })
+import "controllers"
